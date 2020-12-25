@@ -1,9 +1,32 @@
-.login-form{
-    margin: 2rem auto;
-    border: solid 1px rgb(58, 53, 53);
-    width: 65%;
-    text-align: center;
-    box-shadow: 5px 5px 10px #ccc;
-    padding: 2.5rem 2rem;
-    padding-bottom: 1rem !important;
+.login-form {
+  margin: 2rem auto;
+  border: solid 1px rgb(58, 53, 53);
+  width: 40%;
+  text-align: center;
+  box-shadow: 5px 5px 10px #ccc;
+  padding: 1rem 2rem;
+  padding-bottom: 0.3rem !important;
 }
+
+@media screen and (max-width: 660px) {
+  .login-form {
+    width: 80%;
+  }
+}
+
+img{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 0.9rem;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+

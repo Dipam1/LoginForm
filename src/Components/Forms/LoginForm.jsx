@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import "./LoginForm.css";
 
 function LoginForm() {
+  const [username, setUsername] = useState("");
+
+
   const onFinish = (values) => {
-    console.log("Success:", values);
+      
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -21,9 +24,10 @@ function LoginForm() {
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
       >
+        <img src='Images/logo.png' alt='prismaLogo'/>
         <Form.Item
           label="Username"
-          name="username"
+          name="username"   
           rules={[
             {
               required: true,
