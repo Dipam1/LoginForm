@@ -1,0 +1,9 @@
+.login-form{
+    margin: 2rem auto;
+    border: solid 1px rgb(58, 53, 53);
+    width: 65%;
+    text-align: center;
+    box-shadow: 5px 5px 10px #ccc;
+    padding: 2.5rem 2rem;
+    padding-bottom: 1rem !important;
+}
