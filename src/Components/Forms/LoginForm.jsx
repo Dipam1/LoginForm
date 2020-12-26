@@ -1,14 +1,9 @@
-import React, { useState } from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import "./LoginForm.css";
 
 function LoginForm() {
-  const [username, setUsername] = useState("");
 
-
-  const onFinish = (values) => {
-      
-  };
+  const onFinish = (values) => {};
 
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
@@ -24,10 +19,10 @@ function LoginForm() {
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
       >
-        <img src='Images/logo.png' alt='prismaLogo'/>
+        <img src="Images/logo.png" alt="prismaLogo" />
         <Form.Item
           label="Username"
-          name="username"   
+          name="username"
           rules={[
             {
               required: true,
@@ -53,6 +48,10 @@ function LoginForm() {
 
         <Form.Item name="remember" valuePropName="checked">
           <Checkbox>Remember me</Checkbox>
+        </Form.Item>
+
+        <Form.Item Label="forgot-password" name="forgot-password">
+          <a href="/forgot-password" className="forgot-password">Forgot Password?</a>
         </Form.Item>
 
         <Form.Item>

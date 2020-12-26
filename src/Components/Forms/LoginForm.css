@@ -1,7 +1,9 @@
+
 .login-form {
   margin: 2rem auto;
   border: solid 1px rgb(58, 53, 53);
   width: 40%;
+  background: rgb(243, 240, 240);
   text-align: center;
   box-shadow: 5px 5px 10px #ccc;
   padding: 1rem 2rem;
